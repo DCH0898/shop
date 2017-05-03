@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/start"
+        layout="@layout/include_title"
+        android:layout_width="match_parent"
+        android:layout_height="38dp" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/start">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onTabClicked"
+                android:text="全部" />
+
+            <TextView
+                android:id="@+id/beforePay"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onTabClicked"
+                android:text="待付款" />
+
+            <TextView
+                android:id="@+id/beforeSend"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onTabClicked"
+                android:text="待发货" />
+
+            <TextView
+                android:id="@+id/beforeReceive"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onTabClicked"
+                android:text="待收货" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="2dp">
+
+            <LinearLayout
+                android:id="@+id/all_"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/textRed"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/beforePay_"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/textRed"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/beforeSend_"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/textRed"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/beforeReceive_"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/textRed"
+                android:orientation="horizontal" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/OrderlistContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tableLayout">
+
+    </FrameLayout>
+
+</RelativeLayout>

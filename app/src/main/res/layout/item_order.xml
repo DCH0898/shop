@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:text="00000000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/shopName"
+            android:background="@drawable/arrow_right" />
+
+
+        <TextView
+            android:id="@+id/orderDelete"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/order_delete" />
+
+        <TextView
+            android:id="@+id/orderStyle"
+            android:layout_width="88dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/orderDelete"
+            android:layout_toStartOf="@id/orderDelete"
+            android:background="@drawable/order_finish" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/layoutOne">
+
+        <ImageView
+            android:id="@+id/shoppingImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/shopping_image" />
+
+        <TextView
+            android:id="@+id/shoppingPriceOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="$16.6"
+            android:textColor="@color/colorAccent" />
+
+
+        <TextView
+            android:id="@+id/shoppingDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/shoppingPriceOne"
+            android:layout_toRightOf="@id/shoppingImage"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="10dp"
+            android:text="良品铺子猪肉脯良品铺子猪肉脯良品铺子猪肉脯良品铺子猪肉脯良品铺子猪肉脯良品铺子猪肉脯良品铺子猪肉脯良品铺子猪肉脯良品铺子猪肉脯良品铺子猪肉脯" />
+
+
+        <TextView
+            android:id="@+id/shoppingPriceTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/shoppingPriceOne"
+            android:text="$16.6"
+            android:textColor="#DDDDDD"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/shoppingNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/shoppingPriceTwo"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:text="*1"
+            android:textColor="@color/textBlack" />
+
+        <TextView
+            android:id="@+id/shoppingFlavor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/shoppingPriceOne"
+            android:layout_toEndOf="@id/shoppingImage"
+            android:layout_toRightOf="@id/shoppingImage"
+            android:paddingLeft="10dp"
+            android:text="劲辣"
+            android:textColor="#AAAAAA"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/bottomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/shoppingImage"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="共1件商品 合计：¥ 16.90（含运费¥ 0.00）" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/bottomText"
+            android:background="@color/backgroundGray" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layoutTwo"
+        android:background="@color/backgroundGray" />
+
+    <RelativeLayout
+        android:id="@+id/layoutThree"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/layoutTwo">
+
+        <Button
+            android:id="@+id/nextAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_red"
+            android:text="付款"
+            android:textColor="@color/textRed" />
+
+        <Button
+            android:id="@+id/buttonOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/nextAction"
+            android:background="@drawable/button_balck"
+            android:text="追加评价"
+            android:textColor="@color/textBlack" />
+
+        <Button
+            android:id="@+id/buttonTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/buttonOne"
+            android:background="@drawable/button_balck"
+            android:text="查看物流"
+            android:textColor="@color/textBlack" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/layoutThree"
+        android:background="@color/backgroundGray" />
+
+
+</RelativeLayout>
