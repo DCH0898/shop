@@ -1,18 +1,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bluetoochservice.bluetoochservice">
+    package="com.example.shop.bluetoochservice">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
         <uses-permission android:name="android.permission.BLUETOOTH" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.shop.bluetoochservice.MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name">
             <intent-filter>
@@ -22,17 +22,17 @@
         </activity>
 
         <activity
-            android:name="com.example.bluetoochservice.activity.MyOrderListActivity"
+            android:name="com.example.shop.activity.MyOrderListActivity"
             android:screenOrientation="portrait"
 
             android:windowSoftInputMode="adjustResize|stateHidden" />
 
         <activity
-            android:name="com.example.bluetoochservice.activity.OrderDetailActivity"
+            android:name="com.example.shop.activity.OrderDetailActivity"
             android:configChanges="orientation|keyboardHidden" />
 
         <activity
-            android:name="com.example.bluetoochservice.activity.ConfirmOrderActivity"
+            android:name="com.example.shop.activity.ConfirmOrderActivity"
             android:configChanges="orientation|keyboardHidden" />
 
     </application>

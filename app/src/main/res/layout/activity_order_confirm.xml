@@ -9,99 +9,103 @@
         android:layout_width="match_parent"
         android:layout_height="40dp" />
 
-    <LinearLayout
-        android:id="@+id/parent_center"
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:id="@+id/choose_consignee_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal" />
+        android:layout_below="@id/title">
 
-    <TextView
-        android:id="@+id/choose_consignee"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/title"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/arrow_right_big" />
+        <LinearLayout
+            android:id="@+id/parent_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" />
 
-    <TextView
-        android:id="@+id/avatar_img_textview"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_below="@id/title"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/avatar_consignee" />
+        <TextView
+            android:id="@+id/choose_consignee"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/arrow_right_big" />
 
-    <TextView
-        android:id="@+id/consignee_name"
-        android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_alignBottom="@id/avatar_img_textview"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@id/avatar_img_textview"
-        android:gravity="center"
-        android:text="收货人：张三" />
+        <TextView
+            android:id="@+id/avatar_img_textview"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/avatar_consignee" />
+
+        <TextView
+            android:id="@+id/consignee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@id/avatar_img_textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/avatar_img_textview"
+            android:gravity="center"
+            android:text="收货人：张三" />
 
 
-    <TextView
-        android:id="@+id/phone_img_textview"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_alignLeft="@id/parent_center"
-        android:layout_below="@id/title"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/phone_consignee" />
+        <TextView
+            android:id="@+id/phone_img_textview"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignLeft="@id/parent_center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/phone_consignee" />
 
-    <TextView
-        android:id="@+id/consignee_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_alignBottom="@id/phone_img_textview"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@id/phone_img_textview"
-        android:gravity="center"
-        android:text="13900000000" />
+        <TextView
+            android:id="@+id/consignee_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@id/phone_img_textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/phone_img_textview"
+            android:gravity="center"
+            android:text="13900000000" />
 
-    <TextView
-        android:id="@+id/location_img_textview"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_below="@id/avatar_img_textview"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/location_consignee" />
+        <TextView
+            android:id="@+id/location_img_textview"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/avatar_img_textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/location_consignee" />
 
-    <TextView
-        android:id="@+id/consignee_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/location_img_textview"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_toLeftOf="@id/choose_consignee"
-        android:layout_toRightOf="@id/location_img_textview"
-        android:paddingBottom="5dp"
-        android:text="收货地址：广东省深圳市布吉街道甘李四路科伦特研发大厦" />
+        <TextView
+            android:id="@+id/consignee_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/consignee_phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/choose_consignee"
+            android:layout_toRightOf="@id/location_img_textview"
+            android:paddingBottom="5dp"
+            android:text="收货地址：广东省深圳市布吉街道甘李四路科伦特研发大厦" />
+
+    </RelativeLayout>
+
 
     <LinearLayout
         android:id="@+id/start_rulues"
         android:layout_width="match_parent"
         android:layout_height="7dp"
-        android:layout_below="@id/consignee_address"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/choose_consignee_layout"
         android:background="@color/backgroundGray"
         android:orientation="horizontal" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@id/consignee_address"
-        android:background="@color/backgroundDividingLine"
-        android:orientation="horizontal" />
 
     <RelativeLayout
         android:id="@+id/bottom"
